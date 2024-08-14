@@ -40,5 +40,15 @@ public class Main {
             // Print the title and author of each book
             System.out.println(book.getTitle() + " by " + book.getAuthor());
         }
+
+        //borrow a book
+        library.borrowBook("Anna Karenina");
+
+        // Check if a book is borrowed
+        System.out.println("Is 'Anna Karenina' borrowed? " + library.isBookBorrowed("Anna Karenina"));
+
+        // Display the status of all books with the borrowed book
+        library.displayBooks();
+
     }
 }

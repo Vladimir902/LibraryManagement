@@ -5,6 +5,7 @@ public class Book {
     private String title;
     // Private field to store the author of the book
     private String author;
+    private boolean isBorrowed;
 
     // Constructor to initialize the title and author fields
     public Book(String title, String author) {
@@ -35,5 +36,19 @@ public class Book {
         // Assign the author parameter to the author field
         this.author = author;
     }
+
+    public boolean isBorrowed() {
+        return isBorrowed;
+    }
+
+    public void borrow() {
+        isBorrowed = true;
+    }
+
+    public void returnBook() {
+        isBorrowed = false;
+    }
+
+
 
 }
