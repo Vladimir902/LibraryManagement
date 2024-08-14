@@ -8,9 +8,7 @@ public class Book {
 
     // Constructor to initialize the title and author fields
     public Book(String title, String author) {
-        // Assign the title parameter to the title field
         this.title = title;
-        // Assign the author parameter to the author field
         this.author = author;
     }
 

@@ -6,6 +6,7 @@ import com.java.library.Library.Library;
 public class Main {
     public static void main(String[] args) {
 
+        //creating new object for storing Book objects
         Library library = new Library();
 
         // Create new Book objects with title and author
@@ -27,11 +28,13 @@ public class Main {
             // Print the title and author of each book
             System.out.println(book.getTitle() + " by " + book.getAuthor());
         }
+        System.out.println();
 
         // Remove a book from the library
         library.removeBook(book2);
         // Print a message to indicate the books in the library after removal
-        System.out.println("\nBooks in the library after removing " + book2.getTitle() + ":");
+        System.out.println("Books in the library after removing " + book2.getTitle() + ":");
+        System.out.println();
         // Iterate through the updated list of books in the library
         for (Book book : library.getBooks()) {
             // Print the title and author of each book
